@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.maximebustros</groupId>
+    <artifactId>JavaEE-Lab1</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>calculator-client</artifactId>
+  <packaging>jar</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>7.0</version>
+      <!-- for explanations about scope=provided, please see:
+	   https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html
+      -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.maximebustros</groupId>
+      <artifactId>calculator-bean</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <!-- for explanations about scope=ejb-client, please see:
+	   https://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html -->
+    </dependency>
+  </dependencies>
+</project>
